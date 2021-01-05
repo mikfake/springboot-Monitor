@@ -1,20 +1,23 @@
-package com.mike.monitor.config;
+package com.mike.monitor.server.config;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 import de.codecentric.boot.admin.server.config.AdminServerProperties;
 
+@Configuration
 public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
     private final String contextPath;
 
-    public SecuritySecureConfig(AdminServerProperties adminServerProperties) {
+    public SecuritySecureConfig (AdminServerProperties adminServerProperties) {
         this.contextPath = adminServerProperties.getContextPath();
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
         // 跨域设置，SpringBootAdmin客户端通过instances注册，见InstancesController
         http.csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .ignoringAntMatchers(contextPath + "/instances");
