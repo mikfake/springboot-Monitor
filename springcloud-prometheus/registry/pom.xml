@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mike.monitor</groupId>
-	<artifactId>provider-sky</artifactId>
+	<artifactId>registry-prometheus</artifactId>
 	<version>1.0</version>
-	<name>provider-sky</name>
+	<name>registry-prometheus</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -20,14 +20,16 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- eureka 客户端 -->
+		<!-- 最新版的 eureka 服务端包 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+
+		<!-- 监控管理 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
