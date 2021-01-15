@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mike.monitor</groupId>
-	<artifactId>provider</artifactId>
+	<artifactId>provider-zipkin</artifactId>
 	<version>1.0</version>
-	<name>consumer</name>
+	<name>provider-zipkin</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

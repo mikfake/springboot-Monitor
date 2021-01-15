@@ -8,8 +8,14 @@ http://localhost:9090
 
 ### 下载grafana
 
-https://grafana.com/get/
+https://grafana.com/grafana/download
 
 ### 启动
 
 http://localhost:3000
+
+### 导入现有的模板
+
+https://grafana.com/grafana/dashboards?search=springboot
+
+https://grafana.com/grafana/dashboards/4701   JVMdashboard

@@ -10,3 +10,5 @@ jdk1.8及以上
 java -jar zipkin.jar
 ```
 
+访问 http://localhost:9411
+
