@@ -45,3 +45,11 @@ Spring Boot作为Java开发语言中最火的微服务开发框架，已经成�
 * 前后端分享资源群，会有很多其他学习资料
 * 入门微服务监控
 
+---
+## 课程地址：https://gitbook.cn/gitchat/activity/6007ee4931d9c8272961bba5
+---
+## 我的公众号：`Mike啥都想搞`
+
+![公众号](https://img-blog.csdnimg.cn/img_convert/f3d73e2167d1c975a36ff7fbe2fd6fd4.png#pic_center)
+
+会分享一些免费的编程课程，希望帮助到大家。
